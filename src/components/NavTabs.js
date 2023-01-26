@@ -1,7 +1,6 @@
 import React from "react";
 
-
-function NavBar({ currentPage, handlePageChange }) {
+function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
@@ -26,7 +25,9 @@ function NavBar({ currentPage, handlePageChange }) {
         <a
           href="#portfolio"
           onClick={() => handlePageChange("Portfolio")}
-          className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
+          className={
+            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+          }
         >
           Portfolio
         </a>
@@ -53,4 +54,4 @@ function NavBar({ currentPage, handlePageChange }) {
   );
 }
 
-export default NavBar;
+export default NavTabs;
