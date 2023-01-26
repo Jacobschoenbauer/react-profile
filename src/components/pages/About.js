@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <h1>About Page</h1>
       <p>
-       Im so cool
+       Im so coolio
       </p>
     </div>
   );
